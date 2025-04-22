@@ -8,7 +8,19 @@ Importance: Size and Style, to mimic newspaper title
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: italic;
-  font-size: 6rem;
+  font-size: 1.2in;
+  
+  text-align: center;
+  
+  border-top: 1.5rem double rgb(71, 9, 48);
+  border-bottom-style: dotted;
+  border-bottom-width: 2px;
+  border-bottom-color: hsl(0,0%,5%);
+
+}
+#nav{
+  border-bottom: 1.5rem double;
+  border-color: color-mix(in srgb, rgb(71, 9, 48) 70%, black 22%);
 }
 /*
 Style for the news of the day: It's Pyramid Day!
@@ -18,7 +30,7 @@ h2 {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  font-size: 3rem;
+  font-size: 1.5cm;
 }
 /*
 Style for subtitles
@@ -28,7 +40,7 @@ h3 {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  font-size: 2rem;
+  font-size: 2.5em;
 }
 /*
 Style for subtopics
@@ -40,7 +52,36 @@ h4 {
   font-style: normal;
   font-size: 1.4rem;
 }
-
+/*
+background color: a SUPER light pink
+*/
 .box {
-  background-color: #feeef9;
+  background-color: #fcf0f8;
+}
+/*
+Past weekend section grouped for padding, width, height, etc. to help illusion of newspaper
+*/
+#Past-Weekend {
+  border: 1px solid black;
+  padding: 20px;
+  width: 600px;
+  height: 1300px;
+  text-align: justify;
+}
+/*
+This Weeks Agenda section grouped for padding, width, height, etc. to help illusion of newspaper
+*/
+#This-Weeks-Agenda{
+  border: 1px solid color(srgb 0 0 0 / 1);
+  padding: 20px;
+  width: 600px;
+  height: 1450px;
+  text-align: left;
+}
+#MaddiePic{
+  width: 400px;
+  height: 400px;
+  padding: 0.5em;
+  border: 5px solid rgb(144, 72, 135);
+  border-radius: 1em;
 }
