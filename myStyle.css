@@ -16,7 +16,7 @@ Importance: Size and Style, to mimic newspaper title
   font-weight: 500;
   font-style: italic;
   font-size: 9vw;
-  
+  font-optical-sizing: auto;
   text-align: center;
   /*blue if border-color is not defined*/
   border-top: 1.5rem double var(--border-color, blue);
@@ -119,7 +119,7 @@ Past weekend section grouped for padding, width, height, etc. to help illusion o
 This Weeks Agenda section grouped for padding, width, height, etc. to help illusion of newspaper
 */
 #This-Weeks-Agenda{
-  border: 1px solid color(srgb 0 0 0 / 1);
+  border: 1px solid rgba(0, 0, 0, 1);
   padding: 20px;
   max-width: 600px;
   height: 1450px;
