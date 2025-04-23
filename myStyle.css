@@ -18,10 +18,7 @@ Importance: Size and Style, to mimic newspaper title
   border-bottom-color: hsl(0,0%,5%);
 
 }
-#nav{
-  border-bottom: 1.5rem double;
-  border-color: color-mix(in srgb, rgb(71, 9, 48) 70%, black 22%);
-}
+
 /*
 Style for the news of the day: It's Pyramid Day!
 */
@@ -78,10 +75,59 @@ This Weeks Agenda section grouped for padding, width, height, etc. to help illus
   height: 1450px;
   text-align: left;
 }
+/*
+This is the border around maddie's picture.
+Notice border radius!
+*/
 #MaddiePic{
   width: 400px;
   height: 400px;
   padding: 0.5em;
-  border: 5px solid rgb(144, 72, 135);
-  border-radius: 1em;
+
+}
+/*
+This creates the double line border below the nav bar 
+                  &
+handles padding of nav bar
+*/
+#navUl{
+  border-bottom: 1.5rem double;
+  border-color: color-mix(in srgb, rgb(71, 9, 48) 70%, black 22%);
+
+  list-style-type: none;
+  margin: 1;
+  padding: 1;
+  overflow: hidden;
+}
+/*
+Nav bar is on left side
+Margin: space btwn each link in nav bar
+*/
+#navLi{
+  float: left;
+  margin: 0 120px;
+}
+/*
+Nav bar uses black text, has small padding, no decoration, and is centered in its on "button"
+*/
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 12px 12px;
+  text-decoration: none;
+  border-radius: 30px;
+}
+/*
+When hovered over, the nav bar is a purple 
+*/
+li a:hover {
+  background-color: #ac81af;
+  color: white;
+}
+/*
+hides the performance video 
+*/
+#video{
+  display:none;
 }

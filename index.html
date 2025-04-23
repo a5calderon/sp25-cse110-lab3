@@ -17,10 +17,10 @@
     <header>
       <h1>THE ALDC TIMES</h1>
       <nav>
-        <ul id = "nav">
-          <li><a href="#Past-Weekend">Past Weekend</a></li>
-          <li><a href="#This-Weeks-Agenda">This Week's Agenda</a></li>
-          <li><a href="#Weekly-Form">Weekly Form</a></li>
+        <ul id = "navUl">
+          <li id="navLi"><a href="#Past-Weekend">Past Weekend</a></li>
+          <li id="navLi"><a href="#This-Weeks-Agenda">This Week's Agenda</a></li>
+          <li id="navLi"><a href="#Weekly-Form">Weekly Form</a></li>
         </ul>
       </nav>
       <div>
@@ -29,7 +29,6 @@
     </header>
     <main>
       <h2>IT'S PYRAMID DAY! </h2>
-      <hr>
       <section id = "Past-Weekend">
         <h3>Past Weekend</h3>
         <h4> Location of Last Competition: </h4>
@@ -42,6 +41,12 @@
           <p>
             The group placed lower than what I wanted; instead of first place, they received third.<br>
             <span>Why third?</span> Let's see...
+            <div id = "video">
+              <video width="400" controls>
+                <source src="video/group.mov" type="video/quicktime">
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </p>
         <h4>Abby's Assessments</h4>
           <p>
@@ -68,10 +73,7 @@
       <hr>
       <section id = "This-Weeks-Agenda">
         <h3>This Week's Agenda</h3>
-        <ol>
-          <li>Solos</li>
-          <li>Group Number</li>
-        </ol>
+     
         <h4>Maddie's solo</h4>
         <div id = "MaddiePic">
           <img src="images/maddie.webp" alt="dramatic shot of maddie performing Cry" width="400">
@@ -160,10 +162,6 @@
         Andrea Calderon<br>
         CSE110, Spring 2025
       </p>
-      <nav>
-        <a href="https://canvas.ucsd.edu/courses/64571">CoursePage</a>
-        <a href="https://app.slack.com/client/T08KEHP2CMP/C08K61YGS75">Slack</a>
-      </nav>
     </footer>
   </body>
 </html>
