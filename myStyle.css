@@ -15,6 +15,15 @@ universal font
   font-family: "Playfair Display", serif;
 }
 /*
+descendant combinator
+
+background of text that uses <p>, but I picked a color that doesn't really
+show up , bc I didnt really have a place for it but its required..
+*/
+div p {
+  background-color: rgb(230, 228, 255);
+}
+/*
 selector list for font weights
 */
 h1,h3{
@@ -22,6 +31,7 @@ h1,h3{
 }
 header{
   max-height: 500px;
+  position: relative;
 }
 /*
 Style for the title: The ALDC Times
@@ -85,7 +95,13 @@ Center Abby and set her in same spot as h2 text
   z-index:2;
   margin: auto;
 }
-
+/*
+Child combinator
+Creates a shadow on abby pic
+*/
+.AbbyPic > img {
+  filter: drop-shadow(0 0 50px rgba(5, 0, 3, 0.972));
+}
 /*
 Style for subtitles
 -size, style, STICKY position, background color
@@ -98,7 +114,7 @@ h3 {
   position: sticky;
   top: 0;
   padding: 1px;
-  background-color: #e8cade;
+  background-color: #f9d3ec;
   border: 2px #e8cade;
 }
 /*
@@ -111,11 +127,13 @@ h4 {
   font-size: 1.4rem;
 }
 /*
+adjacent sibling combinator and has()
 only grabs h4 that has p after it
 */
 h4:has(+ p) {
   color: #9d5183;
 }
+
 
 /*
 changes background color based on size of screen
@@ -141,12 +159,13 @@ changes background color based on size of screen
 Past weekend section grouped for padding, width, height, etc. to help illusion of newspaper
 */
 #Past-Weekend {
-  border: 1px solid rgba(0, 0, 0, 1); /* shorthand: width, style, color */
+  background-color: rgb(225, 225, 252);
   padding: 20px;
   max-width: 800px;
   min-height: 1300px;
   text-align: justify;
 }
+
 /*
 This Weeks Agenda section follows box-model and is grouped for padding, width, height, etc. 
 */
@@ -182,7 +201,6 @@ handles padding of nav bar
   list-style-type: none;
   padding: 1px;
 
-  overflow: hidden;
 }
 /*
 Nav bar is on left side
@@ -218,7 +236,7 @@ when actually clicked, it turns to a pink
   &:active {
     background-color: #fdabdf;
     color: white;
-  }
+}
 }
 
 
@@ -229,14 +247,52 @@ hides the performance video
   display:none;
   width: 100px;
 }
+
+
 /*
-changes color of submit button of form
+using two selectors , element.class
+button gradient, font color, size, and spacing
 */
-[type="submit"] {
-  background-color: #9dd1fe;
+button[type="submit"].pyramid-submit {
+  background: linear-gradient(to right, #9dd1fe9d, #db7ebe7d);
+  border: 1px solid #1e1f1f;
+  color: #313335;
+  font-weight: bold;
+  letter-spacing: 1px;
+  /*
+  padding helps with size of button
+  */
+  padding: 6px 15px;
+  border-radius: 8px;
 }
-
-
+/*
+when hovered over, button looks blue
+*/
+button[type="submit"].pyramid-submit:hover {
+  background: linear-gradient(to right, #8bc6ff, #6aaef0);
+}
+/*
+when clicked, button gets a bit smaller
+*/
+button[type="submit"].pyramid-submit:active {
+  transform: scale(0.98);
+}
+/*
+General sibling 
+creates colored box arounf form
+*/
+#Weekly-Form h3 ~ form {
+  background: rgba(243, 196, 241, 0.349);
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 15px;
+}
+/*
+adjusts footer to viewwidth
+*/
 footer{
   font-size: 1vw;
 }
+
+
+
