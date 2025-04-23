@@ -3,11 +3,9 @@
 /*
 var for border color
 */
-@property --border-color {
-  syntax: "<color>";
-  initial-value: rgb(71, 9, 48);
-  inherits: false;
-}
+:root {
+   --border-color: rgb(71, 9, 48);
+  }
 /*
 universal font
 */
@@ -143,11 +141,12 @@ changes background color based on size of screen
     background-color: rgb(241, 236, 252);
   }
 }
-.box {
+
   @media (min-width: 800px) {
+    .box{
     background-color: #fcf0f8;
+    }
   }
-}
 
 .flex-container{
   display: flex;
@@ -183,7 +182,7 @@ Notice border radius!
 #MaddiePic{
   max-width: 400px;
   height: 400px;
-  padding: 0.5em,0.5em,0.5em,0.5em;
+  padding: 0.5em 0.5em 0.5em 0.5em;
 }
 /*
 This creates the double line border below the nav bar 
@@ -238,8 +237,6 @@ when actually clicked, it turns to a pink
     color: white;
 }
 }
-
-
 /*
 hides the performance video 
 */
@@ -247,8 +244,6 @@ hides the performance video
   display:none;
   width: 100px;
 }
-
-
 /*
 using two selectors , element.class
 button gradient, font color, size, and spacing
