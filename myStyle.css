@@ -213,29 +213,27 @@ Margin: space btwn each link in nav bar
 Nav bar uses black text, has small padding, no decoration, and is centered in its on "button"
 */
 li a {
-  &{
-    display: block;
-    color: black;
-    font-size: 5mm;
-    text-align: center;
-    padding: 10px 10px 10px 10px; /*shorthand padding*/
-    text-decoration: none;
-    border-radius: 10px;
-  }
+  display: block;
+  color: black;
+  font-size: 5mm;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 10px;
+}
 /*
 When hovered over, the nav bar is a purple 
 */
-  &:hover {
-    background-color: #ac81af;
-    color: white;
-  }
+li a:hover {
+  background-color: #ac81af;
+  color: white;
+}
 /*
 when actually clicked, it turns to a pink
 */
-  &:active {
-    background-color: #fdabdf;
-    color: white;
-}
+li a:active {
+  background-color: #fdabdf;
+  color: white;
 }
 /*
 hides the performance video 
