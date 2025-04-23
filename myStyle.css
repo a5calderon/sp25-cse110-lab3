@@ -36,24 +36,42 @@ Importance: Size and Style, to mimic newspaper title
   padding-left: 15px;
 
 }
-/*
-Positioning Abby pic a bit off from original positon 
-*/
-.AbbyPic{
-  position: relative;
-  left: 1px;
-  margin: auto;
-}
+
 /*
 Style for the news of the day: It's Pyramid Day!
 */
-h2 {
+.AbbyPic h2 {
   font-family: "Playfair Display", serif;
   font-weight: 500;
   font-style: normal;
   font-size: 2cm;
   text-align: center;
+  position: relative;
+  z-index: 1;
+  grid-row:1;
+  grid-column-start: 1;
+  position:relative;
+  color: rgba(0, 0, 0, 0.778);
+  
 }
+/*
+Positioning Abby pic a bit off from original positon 
+*/
+.AbbyPic{
+  display: grid;
+  position: relative;
+  margin: auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  width: fit-content;
+}
+.AbbyPic img{
+  grid-row:1;
+  grid-column: 1;
+  z-index:2;
+  margin: auto;
+}
+
 /*
 Style for subtitles
 -size, style, STICKY position, background color
@@ -80,13 +98,7 @@ h4 {
   font-style: normal;
   font-size: 1.4rem;
 }
-/*
-background color: a SUPER light pink
-*/
-.box {
-  background-color: #fcf0f8;
-  padding: 15px 20px;
-}
+
 /*
 changes background color based on size of screen
 */
@@ -113,7 +125,7 @@ changes background color based on size of screen
 Past weekend section grouped for padding, width, height, etc. to help illusion of newspaper
 */
 #Past-Weekend {
-  border: 1px solid black; /* shorthand: width, style, color */
+  border: 1px solid rgba(0, 0, 0, 1); /* shorthand: width, style, color */
   padding: 20px;
   max-width: 600px;
   min-height: 1300px;
@@ -123,7 +135,6 @@ Past weekend section grouped for padding, width, height, etc. to help illusion o
 This Weeks Agenda section follows box-model and is grouped for padding, width, height, etc. 
 */
 #This-Weeks-Agenda{
-  border: 1px solid rgba(0, 0, 0, 1); /* shorthand: width, style, color */
   background-color: rgb(222, 229, 246);
   padding: 20px; 
   max-width: 600px;
