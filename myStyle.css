@@ -1,4 +1,8 @@
-
+@property --border-color {
+  syntax: "<color>";
+  initial-value: rgb(71, 9, 48);
+  inherits: false;
+}
 /*
 Style for the title: The ALDC Times
 Importance: Size and Style, to mimic newspaper title
@@ -11,8 +15,8 @@ Importance: Size and Style, to mimic newspaper title
   font-size: 1.2in;
   
   text-align: center;
-  
-  border-top: 1.5rem double rgb(71, 9, 48);
+  /*blue if border-color is not defined*/
+  border-top: 1.5rem double var(--border-color, blue);
   border-bottom-style: dotted;
   border-bottom-width: 2px;
   border-bottom-color: hsl(0,0%,5%);
