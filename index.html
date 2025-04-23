@@ -141,13 +141,14 @@
       <input type="date" id="episode-date" name="episode-date"><br><br>
 
       <label>Which moms do you agree with? (Check all that apply):</label><br>
-      <input type="checkbox" id="kelly" name="mom" value="Kelly">
-      <label for="kelly">Kelly</label><br>
-      <input type="checkbox" id="christi" name="mom" value="Christi">
-      <label for="christi">Christi</label><br>
-      <input type="checkbox" id="melissa" name="mom" value="Melissa">
-      <label for="melissa">Melissa</label><br><br>
-
+      <div class="mom-selection">
+        <input type="checkbox" id="kelly" name="mom" value="Kelly">
+        <label for="kelly">Kelly</label><br>
+        <input type="checkbox" id="christi" name="mom" value="Christi">
+        <label for="christi">Christi</label><br>
+        <input type="checkbox" id="melissa" name="mom" value="Melissa">
+        <label for="melissa">Melissa</label><br><br>
+      </div>
       <label for="notes">Any drama you want to spill?</label><br>
       <textarea id="notes" name="notes" rows="4" cols="40" placeholder="Write your tea here..."></textarea><br><br>
 
@@ -160,7 +161,7 @@
         <option value="1">🔥</option>
       </select><br><br>
 
-      <button type="submit">Submit</button>
+      <button type="submit" class="pyramid-submit">Submit</button>
     </fieldset>
     </form>
     </section>
