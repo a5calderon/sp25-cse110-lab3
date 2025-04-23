@@ -1,3 +1,7 @@
+/*
+var for border color
+*/
+
 @property --border-color {
   syntax: "<color>";
   initial-value: rgb(71, 9, 48);
@@ -9,7 +13,6 @@ Importance: Size and Style, to mimic newspaper title
 */
  h1 {
   font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
   font-weight: 500;
   font-style: italic;
   font-size: 9vw;
@@ -23,10 +26,14 @@ Importance: Size and Style, to mimic newspaper title
   border-bottom-color: hsl(0,0%,5%);
 
 }
-
-#AbbyPic{
+/*
+Positioning Abby pic a bit off from original positon 
+*/
+.AbbyPic{
   position: relative;
-  left: 300px;
+  left: 1px;
+  
+  
 }
 /*
 Style for the news of the day: It's Pyramid Day!
@@ -40,6 +47,7 @@ h2 {
 }
 /*
 Style for subtitles
+-size, style, STICKY position, background color
 */
 h3 {
   font-family: "Playfair Display", serif;
@@ -72,13 +80,39 @@ background color: a SUPER light pink
   background-color: #fcf0f8;
 }
 /*
+changes background color based on size of screen
+*/
+@media screen and (min-width: 200px) {
+  .box {
+    background-color: rgb(241, 236, 252);
+  }
+}
+  @media screen and (min-width: 800px) {
+    .box {
+      background-color:  #fcf0f8;
+    }
+}
+/*
+
+*/
+header {
+  display: flex;
+  flex-direction: column;
+}
+.flex-container{
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: space-around;
+}
+
+/*
 Past weekend section grouped for padding, width, height, etc. to help illusion of newspaper
 */
 #Past-Weekend {
   border: 1px solid black;
   padding: 20px;
   max-width: 600px;
-  height: 1300px;
+  min-height: 1300px;
   text-align: justify;
 }
 /*
@@ -87,7 +121,7 @@ This Weeks Agenda section grouped for padding, width, height, etc. to help illus
 #This-Weeks-Agenda{
   border: 1px solid color(srgb 0 0 0 / 1);
   padding: 20px;
-  width: 600px;
+  max-width: 600px;
   height: 1450px;
   text-align: left;
 }
@@ -96,7 +130,7 @@ This is the border around maddie's picture.
 Notice border radius!
 */
 #MaddiePic{
-  min-width: 400px;
+  max-width: 400px;
   height: 400px;
   padding: 0.5em;
 
@@ -107,6 +141,10 @@ This creates the double line border below the nav bar
 handles padding of nav bar
 */
 #navUl{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
   border-bottom: 1.5rem double;
   border-color: color-mix(in srgb, rgb(71, 9, 48) 70%, black 22%);
 
@@ -134,6 +172,7 @@ li a {
   padding: 12px 12px;
   text-decoration: none;
   border-radius: 30px;
+ 
 }
 /*
 When hovered over, the nav bar is a purple 
@@ -155,4 +194,5 @@ hides the performance video
 */
 #video{
   display:none;
+  width: 100px;
 }
