@@ -12,16 +12,18 @@ Importance: Size and Style, to mimic newspaper title
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: italic;
-  font-size: 1.2in;
+  font-size: 9vw;
   
   text-align: center;
   /*blue if border-color is not defined*/
   border-top: 1.5rem double var(--border-color, blue);
   border-bottom-style: dotted;
+  margin-bottom: 0.8mm;
   border-bottom-width: 2px;
   border-bottom-color: hsl(0,0%,5%);
 
 }
+
 
 /*
 Style for the news of the day: It's Pyramid Day!
@@ -99,8 +101,8 @@ handles padding of nav bar
   border-color: color-mix(in srgb, rgb(71, 9, 48) 70%, black 22%);
 
   list-style-type: none;
-  margin: 1;
-  padding: 1;
+  padding: 1px;
+
   overflow: hidden;
 }
 /*
