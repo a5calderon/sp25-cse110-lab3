@@ -40,7 +40,6 @@ Style for the news of the day: It's Pyramid Day!
 */
 h2 {
   font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-size: 1.5cm;
@@ -51,7 +50,6 @@ Style for subtitles
 */
 h3 {
   font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-size: 2.5em;
@@ -68,7 +66,6 @@ Style for subtopics
 */
 h4 {
   font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-size: 1.4rem;
