@@ -1,19 +1,30 @@
+
+
 /*
 var for border color
 */
-
 @property --border-color {
   syntax: "<color>";
   initial-value: rgb(71, 9, 48);
   inherits: false;
 }
 /*
+universal font
+*/
+* {
+  font-family: "Playfair Display", serif;
+}
+/*
+selector list for font weights
+*/
+h1,h3{
+  font-weight: 500;
+}
+/*
 Style for the title: The ALDC Times
 Importance: Size and Style, to mimic newspaper title
 */
  h1 {
-  font-family: "Playfair Display", serif;
-  font-weight: 500;
   font-style: italic;
   font-size: 2.5cm;
   text-align: center;
@@ -39,9 +50,9 @@ Importance: Size and Style, to mimic newspaper title
 
 /*
 Style for the news of the day: It's Pyramid Day!
+Set text behin abby picture
 */
 .AbbyPic h2 {
-  font-family: "Playfair Display", serif;
   font-weight: 500;
   font-style: normal;
   font-size: 2cm;
@@ -55,7 +66,7 @@ Style for the news of the day: It's Pyramid Day!
   
 }
 /*
-Positioning Abby pic a bit off from original positon 
+Center Abby and set her in same spot as h2 text
 */
 .AbbyPic{
   display: grid;
@@ -77,8 +88,6 @@ Style for subtitles
 -size, style, STICKY position, background color
 */
 h3 {
-  font-family: "Playfair Display", serif;
-  font-weight: 500;
   font-style: normal;
   font-size: 2.5em;
 
@@ -112,9 +121,7 @@ changes background color based on size of screen
       background-color:  #fcf0f8;
     }
 }
-/*
 
-*/
 .flex-container{
   display: flex;
   flex-flow:row wrap;
@@ -127,7 +134,7 @@ Past weekend section grouped for padding, width, height, etc. to help illusion o
 #Past-Weekend {
   border: 1px solid rgba(0, 0, 0, 1); /* shorthand: width, style, color */
   padding: 20px;
-  max-width: 600px;
+  max-width: 800px;
   min-height: 1300px;
   text-align: justify;
 }
@@ -137,7 +144,7 @@ This Weeks Agenda section follows box-model and is grouped for padding, width, h
 #This-Weeks-Agenda{
   background-color: rgb(222, 229, 246);
   padding: 20px; 
-  max-width: 600px;
+  max-width: 800px;
   height: 1450px;
   text-align: left;
 }
@@ -149,8 +156,6 @@ Notice border radius!
   max-width: 400px;
   height: 400px;
   padding: 0.5em,0.5em,0.5em,0.5em;
-  
-
 }
 /*
 This creates the double line border below the nav bar 
@@ -188,7 +193,7 @@ li a {
   text-align: center;
   padding: 10px 10px 10px 10px; /*shorthand padding*/
   text-decoration: none;
-  border-radius: 30px;
+  border-radius: 10px;
   
 }
 /*
@@ -206,6 +211,7 @@ li a:active {
   color: white;
 }
 
+
 /*
 hides the performance video 
 */
@@ -213,6 +219,13 @@ hides the performance video
   display:none;
   width: 100px;
 }
+/*
+changes color of submit button of form
+*/
+[type="submit"] {
+  background-color: #9dd1fe;
+}
+
 
 footer{
   font-size: 1vw;
