@@ -20,6 +20,9 @@ selector list for font weights
 h1,h3{
   font-weight: 500;
 }
+header{
+  max-height: 500px;
+}
 /*
 Style for the title: The ALDC Times
 Importance: Size and Style, to mimic newspaper title
@@ -107,6 +110,12 @@ h4 {
   font-style: normal;
   font-size: 1.4rem;
 }
+/*
+only grabs h4 that has p after it
+*/
+h4:has(+ p) {
+  color: #9d5183;
+}
 
 /*
 changes background color based on size of screen
@@ -116,10 +125,10 @@ changes background color based on size of screen
     background-color: rgb(241, 236, 252);
   }
 }
-  @media screen and (min-width: 800px) {
-    .box {
-      background-color:  #fcf0f8;
-    }
+.box {
+  @media (min-width: 800px) {
+    background-color: #fcf0f8;
+  }
 }
 
 .flex-container{
@@ -187,28 +196,29 @@ Margin: space btwn each link in nav bar
 Nav bar uses black text, has small padding, no decoration, and is centered in its on "button"
 */
 li a {
-  display: block;
-  color: black;
-  font-size: 5mm;
-  text-align: center;
-  padding: 10px 10px 10px 10px; /*shorthand padding*/
-  text-decoration: none;
-  border-radius: 10px;
-  
-}
+  &{
+    display: block;
+    color: black;
+    font-size: 5mm;
+    text-align: center;
+    padding: 10px 10px 10px 10px; /*shorthand padding*/
+    text-decoration: none;
+    border-radius: 10px;
+  }
 /*
 When hovered over, the nav bar is a purple 
 */
-li a:hover {
-  background-color: #ac81af;
-  color: white;
-}
+  &:hover {
+    background-color: #ac81af;
+    color: white;
+  }
 /*
 when actually clicked, it turns to a pink
 */
-li a:active {
-  background-color: #fdabdf;
-  color: white;
+  &:active {
+    background-color: #fdabdf;
+    color: white;
+  }
 }
 
 
