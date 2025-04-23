@@ -24,7 +24,10 @@ Importance: Size and Style, to mimic newspaper title
 
 }
 
-
+#AbbyPic{
+  position: relative;
+  left: 300px;
+}
 /*
 Style for the news of the day: It's Pyramid Day!
 */
@@ -44,6 +47,13 @@ h3 {
   font-weight: 500;
   font-style: normal;
   font-size: 2.5em;
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 1px;
+  background-color: #e8cade;
+  border: 2px #e8cade;
 }
 /*
 Style for subtopics
@@ -111,7 +121,7 @@ Margin: space btwn each link in nav bar
 */
 #navLi{
   float: left;
-  margin: 0 120px;
+  margin: 1% 11%;
 }
 /*
 Nav bar uses black text, has small padding, no decoration, and is centered in its on "button"
@@ -119,6 +129,7 @@ Nav bar uses black text, has small padding, no decoration, and is centered in it
 li a {
   display: block;
   color: black;
+  font-size: 5mm;
   text-align: center;
   padding: 12px 12px;
   text-decoration: none;
