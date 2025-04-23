@@ -67,7 +67,7 @@ Past weekend section grouped for padding, width, height, etc. to help illusion o
 #Past-Weekend {
   border: 1px solid black;
   padding: 20px;
-  width: 600px;
+  max-width: 600px;
   height: 1300px;
   text-align: justify;
 }
@@ -86,7 +86,7 @@ This is the border around maddie's picture.
 Notice border radius!
 */
 #MaddiePic{
-  width: 400px;
+  min-width: 400px;
   height: 400px;
   padding: 0.5em;
 
