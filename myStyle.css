@@ -15,15 +15,25 @@ Importance: Size and Style, to mimic newspaper title
   font-family: "Playfair Display", serif;
   font-weight: 500;
   font-style: italic;
-  font-size: 9vw;
-  font-optical-sizing: auto;
+  font-size: 2.5cm;
   text-align: center;
   /*blue if border-color is not defined*/
+  /*long hand border*/
   border-top: 1.5rem double var(--border-color, blue);
   border-bottom-style: dotted;
-  margin-bottom: 0.8mm;
   border-bottom-width: 2px;
   border-bottom-color: hsl(0,0%,5%);
+
+  /*long hand margin*/
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 0.8mm;
+    /*long hand padding*/
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-left: 15px;
 
 }
 /*
@@ -32,18 +42,17 @@ Positioning Abby pic a bit off from original positon
 .AbbyPic{
   position: relative;
   left: 1px;
-  
-  
+  margin: auto;
 }
 /*
 Style for the news of the day: It's Pyramid Day!
 */
 h2 {
   font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  font-size: 1.5cm;
+  font-size: 2cm;
+  text-align: center;
 }
 /*
 Style for subtitles
@@ -51,7 +60,6 @@ Style for subtitles
 */
 h3 {
   font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-size: 2.5em;
@@ -68,7 +76,6 @@ Style for subtopics
 */
 h4 {
   font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-size: 1.4rem;
@@ -78,6 +85,7 @@ background color: a SUPER light pink
 */
 .box {
   background-color: #fcf0f8;
+  padding: 15px 20px;
 }
 /*
 changes background color based on size of screen
@@ -95,10 +103,6 @@ changes background color based on size of screen
 /*
 
 */
-header {
-  display: flex;
-  flex-direction: column;
-}
 .flex-container{
   display: flex;
   flex-flow:row wrap;
@@ -109,18 +113,19 @@ header {
 Past weekend section grouped for padding, width, height, etc. to help illusion of newspaper
 */
 #Past-Weekend {
-  border: 1px solid black;
+  border: 1px solid black; /* shorthand: width, style, color */
   padding: 20px;
   max-width: 600px;
   min-height: 1300px;
   text-align: justify;
 }
 /*
-This Weeks Agenda section grouped for padding, width, height, etc. to help illusion of newspaper
+This Weeks Agenda section follows box-model and is grouped for padding, width, height, etc. 
 */
 #This-Weeks-Agenda{
-  border: 1px solid rgba(0, 0, 0, 1);
-  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 1); /* shorthand: width, style, color */
+  background-color: rgb(222, 229, 246);
+  padding: 20px; 
   max-width: 600px;
   height: 1450px;
   text-align: left;
@@ -132,7 +137,8 @@ Notice border radius!
 #MaddiePic{
   max-width: 400px;
   height: 400px;
-  padding: 0.5em;
+  padding: 0.5em,0.5em,0.5em,0.5em;
+  
 
 }
 /*
@@ -169,10 +175,10 @@ li a {
   color: black;
   font-size: 5mm;
   text-align: center;
-  padding: 12px 12px;
+  padding: 10px 10px 10px 10px; /*shorthand padding*/
   text-decoration: none;
   border-radius: 30px;
- 
+  
 }
 /*
 When hovered over, the nav bar is a purple 
@@ -195,4 +201,8 @@ hides the performance video
 #video{
   display:none;
   width: 100px;
+}
+
+footer{
+  font-size: 1vw;
 }
