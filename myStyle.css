@@ -132,6 +132,14 @@ li a:hover {
   color: white;
 }
 /*
+when actually clicked, it turns to a pink
+*/
+li a:active {
+  background-color: #fdabdf;
+  color: white;
+}
+
+/*
 hides the performance video 
 */
 #video{
