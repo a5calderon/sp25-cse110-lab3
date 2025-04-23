@@ -220,20 +220,18 @@ li a {
   padding: 10px;
   text-decoration: none;
   border-radius: 10px;
-}
-/*
-When hovered over, the nav bar is a purple 
-*/
-li a:hover {
-  background-color: #ac81af;
-  color: white;
-}
-/*
-when actually clicked, it turns to a pink
-*/
-li a:active {
-  background-color: #fdabdf;
-  color: white;
+
+  /* When hovered over, the nav bar is purple */
+  &:hover {
+    background-color: #ac81af;
+    color: white;
+  }
+
+  /* When actually clicked, it turns to pink */
+  &:active {
+    background-color: #fdabdf;
+    color: white;
+  }
 }
 /*
 hides the performance video 
